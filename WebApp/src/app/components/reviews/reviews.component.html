@@ -1,0 +1,8 @@
+<!--
+    This html file shows two different components.
+    First it displays the add-review component, then it loops over the reviews array to display all the review items.
+       - *ngFor is the for loop
+-->
+
+<app-add-review (onPostReview)="postReview($event)"></app-add-review>
+<app-review-item *ngFor="let review of reviews" [review]="review"></app-review-item>

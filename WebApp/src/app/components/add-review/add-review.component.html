@@ -1,0 +1,10 @@
+<form *ngIf="showAddReview" class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="text">New review</label>
+        <input type="text" name="reviewTitle" [(ngModel)]="reviewTitle" id="reviewTitle" placeholder="Review title" />
+        <input type="text" name="filmTitle" [(ngModel)]="filmTitle" id="filmTitle" placeholder="Film title" />
+        <input type="text" name="filmDirector" [(ngModel)]="filmDirector" id="filmDirector" placeholder="Film director" />
+        <input type="text" name="reviewText" [(ngModel)]="reviewText" id="reviewText" placeholder="Your review"/>
+    </div>
+    <input type="submit" value="Post review" class="btn btn-block" />
+</form>

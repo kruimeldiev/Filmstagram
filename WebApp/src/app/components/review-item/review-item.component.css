@@ -1,0 +1,30 @@
+.review {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #1820222b;
+    border-radius: 8px;
+    margin-top: 12px;
+  }
+  
+  .review h3 {
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .review h4 {
+    font-size: small;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .review p {
+    font-size: x-small;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }

@@ -1,0 +1,12 @@
+<div>
+    <h2>Register</h2>
+    <form class="login-form" (ngSubmit)="onRegisterUser()">
+        <div class="form-control">
+            <input type="text" name="emailAddress" [(ngModel)]="emailAddress" id="emailAddress" placeholder="Email address" />
+            <input type="password" name="password" [(ngModel)]="password" id="password" placeholder="Password" />
+            <input type="password" name="verifyPassword" [(ngModel)]="verifyPassword" id="verifyPassword" placeholder="Verify password" />
+            <input type="text" name="username" [(ngModel)]="username" id="username" placeholder="Username" />
+            <input type="submit" value="Register" class="btn" />
+        </div>
+    </form>
+</div>

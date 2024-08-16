@@ -1,0 +1,5 @@
+<div class="review" [routerLink]="['review/', review.uid]" (click)="reviewSelected(review)">
+    <h3>{{ review.title }}</h3>
+    <h4>{{ review.authorName }}</h4>
+    <p>{{ review.writeDate }}</p>
+</div>

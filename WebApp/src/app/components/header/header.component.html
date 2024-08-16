@@ -1,0 +1,21 @@
+<header>
+    <h1>{{ headerTitle }}</h1>
+    <span class="empty_fill"></span>
+    <app-button 
+      *ngIf="hasRoute('/reviewsOverview')"
+      color="{{ showAddReview ? '#FF4847' : '#54AAC7' }}"
+      buttonText="{{ showAddReview ? 'Cancel' : 'Add review' }}"
+      (btnClick)="toggleNewReview()"></app-button>
+    <button
+      *ngIf="hasRoute('/reviewsOverview')"
+      class="white-btn"
+      (click)="logoutUser()">Logout</button>
+      <button
+      *ngIf="hasRoute('/')"
+      class="white-btn"
+      (click)="routeToRegister()">Register</button>
+      <button
+      *ngIf="hasRoute('/register')"
+      class="white-btn"
+      (click)="routeBack()">Back</button>
+</header>
